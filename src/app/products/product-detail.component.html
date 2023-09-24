@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<main class="container">
+
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <app-aside></app-aside>
+
+      </div>
+      <div class="col-md-8">
+          
+        <div *ngIf='product' >
+          <h1>Product Detail</h1>
+          
+            <div class="card">
+
+              <div *ngIf='product?.image_url; else elseBlock'>
+                <img class="card-img-top" src="{{ product.image_url }}" alt="product image">
+              </div>
+              <ng-template #elseBlock>
+                <img class="card-img-top" src="https://placehold.co/286x180" alt="temp image">
+              </ng-template>
+
+              <div class="card-body">
+                <h5 class="card-title">{{ product.product.name }} - {{ product.name }}</h5>
+                <p class="card-text" *ngIf='product?.excerpt' >{{ product.excerpt }}</p>
+              </div>
+            </div>
+            
+
+        </div>
+
+      </div>
+    </div>
+
+
+</main>
+
+<app-footer></app-footer>
