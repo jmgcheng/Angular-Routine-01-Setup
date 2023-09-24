@@ -59,7 +59,7 @@ window.onload = function() { console.log('ready'); };
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW49ac1XWRI0cuqzUPb0FGf9qOYAsjR7o" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=yourGoogleAPIKey" defer></script>
 </head>
 <body>
 	<app-root></app-root>
