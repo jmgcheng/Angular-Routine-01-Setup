@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class ProductListComponent {
   sub!: Subscription;
-  data: IProductVariation[] = [];
+  // data: IProductVariation[] = [];
   products: IProductVariation[] = [];
 
   constructor(private productService: ProductService) { }

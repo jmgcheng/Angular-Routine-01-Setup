@@ -22,6 +22,9 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
+    /*
+      dont forget to export these components so it can be imported properly in other modules
+    */ 
   ],  
 })
 export class SharedModule { }
